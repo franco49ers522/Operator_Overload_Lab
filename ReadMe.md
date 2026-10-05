@@ -70,14 +70,14 @@ Run `./bank_accounts` on Linux/macOS or `.\bank_accounts.exe` in Windows PowerSh
 
 ## Menu
 
-1. Create account using the static factory.
-2. List accounts using the static print function.
-3. Deposit using +=.
-4. Withdraw using -=.
-5. Change account holder name.
-6. Compare two selected accounts using ==, <, and >. Selecting the same account demonstrates equality.
-7. Demonstrate copy construction, assignment, self-assignment, and independent data.
-0. Exit and release account resources.
+- **1**: Create account using the static factory.
+- **2**: List accounts using the static print function.
+- **3**: Deposit using +=.
+- **4**: Withdraw using -=.
+- **5**: Change account holder name.
+- **6**: Compare two selected accounts using ==, <, and >. Selecting the same account demonstrates equality.
+- **7**: Demonstrate copy construction, assignment, self-assignment, and independent data.
+- **0**: Exit and release account resources.
 
 ## Verification
 
@@ -90,3 +90,4 @@ g++ -std=c++11 -Wall -Wextra -Wpedantic tests/BankAccountTests.cpp BankAccount.c
 Run `./account_tests` or `.\account_tests.exe`. Expected output: `All BankAccount tests passed.`
 
 The project and tests compiled with warnings treated as errors. Tests passed for independent copies, self-assignment, assignment surviving destruction of its source, chained arithmetic and returned references, account-number equality, balance ordering and ties, full withdrawals, overdrafts, invalid amounts, overflow, invalid construction, vector growth, static input validation, formatted printing, and end of input. A scripted menu run also verified creation, deposits, withdrawals, rejection of insufficient funds, renaming, comparisons, deep-copy demonstrations, listing, and exit.
+
